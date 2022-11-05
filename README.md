@@ -23,11 +23,11 @@ The purpose of this analysis is to utilize `Machine Learning` statistical algori
 
 **`RandomOverSampler Model`** randomly selects from the minority class and adds it to the training set until both classifications are equal. The results classified 51,366 records each as High Risk and Low Risk.
 
-![oversamplecount](Module-17-Challenge-Resources/resources/oversampling.png)
+![oversamplecount](Module-17-Challenge-Resources/resources/oversampling_count.png)
 
   * Balanced accuracy score: 64%.
 
-  ![oversampleacc](Module-17-Challenge-Resources/resources/oversampling_as.png)
+  ![oversampleacc](Module-17-Challenge-Resources/resources/oversample_as.png)
 
   * The "High Risk" precision rate was `1%` with the recall at `66%`, giving this model an `F1 score of 2%`.
   * "Low Risk" had a `precision rate of 100%` and recall at `68`%`.  
@@ -36,13 +36,13 @@ The purpose of this analysis is to utilize `Machine Learning` statistical algori
   ![oversamplecm](Module-17-Challenge-Resources/resources/oversampling_cm.png)
   
   ### Imbalance Classfication Report
-  ![oversampleclass](Module-17-Challenge-Resources/resources/oversampling_cr.png
+  ![oversampleclass](Module-17-Challenge-Resources/resources/oversampling_cr.png)
 
 **`SMOTE (Synthetic Minority Oversampling Technique) Model`**, like `RandomOverSampler` increases the size of the minority class by creating new values based on the value of the closest neighbors to the minority class instead of random selection. 
 
   * The balanced accuracy score decreased slightly to `62%`.
 
-  ![smoteacc](Module-17-Challenge-Resources/resources/oversample_as.png)
+  ![smoteacc](Module-17-Challenge-Resources/resources/smote_as.png)
 
   * Like `RandomOverSampler`, the "High Risk" precision rate was 1% with the recall degraded to 61% giving this model an F1 score of 2%.
   * "Low Risk" had a precision rate of 100% and an improved recall at 69%.  
@@ -111,7 +111,7 @@ A comparison of `Random Balance Forrest Classifier`and `Easy Ensemble Classifier
 
   ![balancecm](/Module-17-Challenge-Resources/resources/balanced_forrest_cm.png)
   
-  ![balanceclass](/Module-17-Challenge-Resources/resources/balanced_forrest_cr.png)
+  ![balanceclass](/Module-17-Challenge-Resources/resources/balanced_forrest_as.png)
 
   ![balancefeature](/Module-17-Challenge-Resources/resources/balanced_forrest_features.png) 
 
@@ -119,14 +119,14 @@ A comparison of `Random Balance Forrest Classifier`and `Easy Ensemble Classifier
 
   * The balanced accuracy score increased to 93.2% with this model.
 
-  ![easyeacc]()
+  ![easyeacc](/Module-17-Challenge-Resources/resources/ensemble_count.png)
 
   * The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
   * "Low Risk" still had a precision rate of 100% with the recall now at 94%.  
 
-  ![easycm]()
+  ![easycm](/Module-17-Challenge-Resources/resources/ensemble_cm.png)
   
-  ![easyclass]()
+  ![easyclass](/Module-17-Challenge-Resources/resources/ensemble_as.png)
 
 # Results
 
